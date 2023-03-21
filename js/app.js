@@ -25,6 +25,17 @@ document.getElementById("calculateTriangleButton").addEventListener("click", fun
   // Clear the input fields
   triangleBaseString.value = "";
   triangleHeightString.value = "";
+
+  // Get the element whose background color I want to change
+  const triangleBackgroundColor = document.querySelector(".bg-rose-200");
+
+  // Generate a random color value using the Math.random() function
+  const randomColor = `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(
+    Math.random() * 256
+  )})`;
+
+  // Set the background color of the element to the random color value
+  triangleBackgroundColor.style.backgroundColor = randomColor;
 });
 
 /* Rectangle Calculate */
@@ -48,6 +59,17 @@ document.getElementById("calculateRectangleButton").addEventListener("click", fu
   // Clear the input fields
   rectangleWidthString.value = "";
   rectangleLengthString.value = "";
+
+  // Get the element whose background color I want to change
+  const rectangleBackgroundColor = document.querySelector(".bg-orange-400");
+
+  // Generate a random color value using the Math.random() function
+  const randomColor = `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(
+    Math.random() * 256
+  )})`;
+
+  // Set the background color of the element to the random color value
+  rectangleBackgroundColor.style.backgroundColor = randomColor;
 });
 
 /* Parallelogram Calculate */
@@ -71,6 +93,17 @@ document.getElementById("calculateParallelogramButton").addEventListener("click"
   // Clear the input fields
   parallelogramBaseString.value = "";
   parallelogramHeightString.value = "";
+
+  // Get the element whose background color I want to change
+  const parallelogramBackgroundColor = document.querySelector(".bg-yellow-400");
+
+  // Generate a random color value using the Math.random() function
+  const randomColor = `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(
+    Math.random() * 256
+  )})`;
+
+  // Set the background color of the element to the random color value
+  parallelogramBackgroundColor.style.backgroundColor = randomColor;
 });
 
 /* Rhombus Calculate */
@@ -95,6 +128,17 @@ document.getElementById("calculateRhombusButton").addEventListener("click", func
   // Clear the input fields
   rhombusBaseString.value = "";
   rhombusHeightString.value = "";
+
+  // Get the element whose background color I want to change
+  const rhombusBackgroundColor = document.querySelector(".bg-gray-200");
+
+  // Generate a random color value using the Math.random() function
+  const randomColor = `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(
+    Math.random() * 256
+  )})`;
+
+  // Set the background color of the element to the random color value
+  rhombusBackgroundColor.style.backgroundColor = randomColor;
 });
 
 /* Pentagon Calculate */
@@ -118,6 +162,17 @@ document.getElementById("calculatePentagonButton").addEventListener("click", fun
   //   Clear The Input Field
   pentagonBaseString.value = "";
   pentagonHeightString.value = "";
+
+  // Get the element whose background color I want to change
+  const pentagonBackgroundColor = document.querySelector(".bg-purple-200");
+
+  // Generate a random color value using the Math.random() function
+  const randomColor = `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(
+    Math.random() * 256
+  )})`;
+
+  // Set the background color of the element to the random color value
+  pentagonBackgroundColor.style.backgroundColor = randomColor;
 });
 
 /* Ellipse Calculate */
@@ -141,4 +196,15 @@ document.getElementById("calculateEllipseButton").addEventListener("click", func
   //   Clear The Input Field
   ellipseAAxisString.value = "";
   ellipseBAxisString.value = "";
+
+  // Get the element whose background color I want to change
+  const ellipseBackgroundColor = document.querySelector(".bg-lime-100");
+
+  // Generate a random color value using the Math.random() function
+  const randomColor = `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(
+    Math.random() * 256
+  )})`;
+
+  // Set the background color of the element to the random color value
+  ellipseBackgroundColor.style.backgroundColor = randomColor;
 });
