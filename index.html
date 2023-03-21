@@ -9,15 +9,64 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="px-2 md:px-4 lg:px-12 xl:px-60 2xl:px-80 mx-auto">
+    <!-- Header -->
     <header class="bg-blue-200 mt-5 p-4 rounded-md flex justify-between items-center">
       <div>
-        <h1 class="text-2xl font-bold ">Interactive</h1>
+        <h1 class="text-2xl font-bold">Interactive</h1>
         <p class="font-semibold text-gray-500">Geometry Genius</p>
       </div>
       <div>
-        <button id="blogButton" class="font-bold text-xl text-[#FFFFFF] bg-[#1090D8] rounded px-3 py-1 mx-auto">Blog</button>
+        <button id="blogButton" class="font-bold text-xl text-[#FFFFFF] bg-[#1090D8] rounded px-3 py-1 mx-auto">
+          Blog
+        </button>
       </div>
     </header>
+    <!-- Main Part -->
+    <main class="mt-10 md:grid md:grid-cols-3 gap-2 sm:grid sm:grid-cols-2">
+      <div class="bg-orange-400 px-6 py-6 text-center rounded-md mt-2">
+        <img src="images/triangle.png" class="mx-auto" />
+        <div class="mt-2 font-semibold">
+          <h1>Triangle</h1>
+          <p>Area (A) = 0.5 X b X h</p>
+        </div>
+        <div class="flex justify-center mt-2 ">
+          <input type="text" placeholder="b" class="w-1/4 rounded" /> &nbsp;
+          <p>cm</p>
+          &nbsp; <input type="text" placeholder="h" class="w-1/4 rounded" /> &nbsp;
+          <p>cm</p>
+        </div>
+        <button class="text-white px-4 py-2 mt-4 w-full rounded-md bg-[#1090D8] font-bold">Calculate</button>
+      </div>
+      <div class="bg-orange-400 px-6 py-6 text-center rounded-md mt-2">
+        <img src="images/rectangle.png" class="mx-auto" />
+        <div class="mt-2 font-semibold">
+          <h1>Rectangle</h1>
+          <p>Area (A) = w X I</p>
+        </div>
+        <div class="flex justify-center mt-2 ">
+          <input type="text" placeholder="w" class="w-1/4 rounded" /> &nbsp;
+          <p>cm</p>
+          &nbsp; <input type="text" placeholder="l" class="w-1/4 rounded" /> &nbsp;
+          <p>cm</p>
+        </div>
+        <button class="text-white px-4 py-2 mt-4 w-full rounded-md bg-[#1090D8] font-bold">Calculate</button>
+      </div>
+      <div class="bg-yellow-400 text-center px-6 py-6 rounded-md mt-2">
+        <img src="images/parallelogram.png" class="mx-auto" />
+        <div class="mt-2 font-semibold">
+          <h1>Parallelogram</h1>
+          <p>Area (A) = b X h</p>
+          <p>b=10cm, h=12cm</p>
+        </div>
+        <div class="flex justify-center mt-2 ">
+          <input type="text" placeholder="b" class="w-1/4 rounded" /> &nbsp;
+          <p>cm</p>
+          &nbsp; <input type="text" placeholder="h" class="w-1/4 rounded" /> &nbsp;
+          <p>cm</p>
+        </div>
+        <button class="text-white px-4 py-2 mt-4 w-full rounded-md bg-[#1090D8] font-bold">Calculate</button>
+      </div>
+    </main>
     <!-- JS file -->
     <script src="js/app.js"></script>
   </body>
