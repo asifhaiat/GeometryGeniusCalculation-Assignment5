@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Questions</title>
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="px-2 md:px-4 lg:px-12 xl:px-80 2xl:px-96 mx-auto">
+    <div class="p-4 bg-stone-300 mt-6 rounded-md shadow-md">
+      <h1 class="font-bold text-black text-xl">Question-1: What is DOM? What is the purpose of the DOM?</h1>
+      <p class="text-justify mx-2  mt-2">
+        An XML and HTML document's programming interface is called the Document Object Model (DOM). Each element,
+        attribute, and line of text in the document is represented by a corresponding object in the DOM tree, which
+        depicts the web page as an organized tree of objects. Programming languages like JavaScript may access and
+        modify the information and structure of a web page via the DOM. <br />
+        The major goal of the DOM is to give web developers a common programming interface for accessing and modifying a
+        web page's content and structure. Developers can dynamically change a web page's content, add new material, or
+        react to user actions like clicks and keypresses by utilizing the DOM. JavaScript code, for instance, can be
+        used to modify the style of existing components, add new items to the page, or react to user input. Ultimately,
+        the DOM is essential to web development because it makes it possible to create dynamic, interactive web pages
+        that can react to user input and offer a rich user experience.
+      </p>
+    </div>
+    <div class="p-4 bg-gray-300 mt-10 rounded-md shadow-md">
+      <h1 class="font-bold text-black text-xl">Question-2: How many ways do you select event from DOM?</h1>
+      <p class="text-justify mx-2 mt-2">
+        There are several ways to select events from the DOM in JavaScript: <br />
+        <span class="underline font-bold">addEventListener() method:</span> The most popular approach for tying event
+        listeners to DOM components is this one. I will define the kind of event you want to listen for as well as the
+        action to take when the event takes place.
+        <br />
+        <span class="underline font-bold">'onclick()' attribute:</span> In order to use this technique, an HTML element
+        must have a onclick property that is assigned to a JavaScript function that will be called whenever the element
+        is clicked. <br />
+        <span class="underline font-bold">onload attribute:</span> After a web page has finished loading, the window
+        object's load event is triggered, and this attribute enables you to add an event listener to that event. <br />
+        <span class="underline font-bold">onsubmit attribute:</span> With the use of this property, you may connect an
+        event listener to a form element's submit event. <br />
+        <span class="underline font-bold">onchange attribute:</span> The change event of an input element, which is
+        triggered when the value of the input is modified, can have an event listener attached to it thanks to this
+        property.
+      </p>
+    </div>
+    <div class="p-4 bg-stone-300 mt-10 rounded-md shadow-md">
+      <h1 class="font-bold text-black text-xl">Question-3: What is eventBubble?</h1>
+      <p class="text-justify mx-2 mt-2">
+        An event that is triggered on a nested element will "bubble up" and trigger any event listeners linked to its
+        parent elements all the way up to the document root thanks to a technique known as event bubbling in the DOM
+        (Document Object Model). <br />
+        Let's say, for instance, that I have a button element nested inside a div element. A click event will be fired
+        on the button if I click it. Nevertheless, due to event bubbling, the div> element that contains the button as
+        well as any parent elements of the div> element, all the way up to the document root, will also be affected by
+        the click event. <br />
+        When handling events on several items with a single event listener, this can be helpful, but if I'm not
+        cautious, it could potentially have unwanted effects. I can use your event listener function to execute the
+        stopPropagation() method on the event object to stop event bubbling. This will stop the event from moving up the
+        DOM tree further.
+      </p>
+    </div>
+    <div class="p-4 bg-gray-300 mt-10 rounded-md shadow-md">
+      <h1 class="font-bold text-black text-xl">
+        Question-4: What is callback function? What does callback function do?
+      </h1>
+      <p class="text-justify mx-2 mt-2">
+        A callback function in JavaScript is a function that is performed after another function has finished doing its
+        work. It is supplied as an argument to the other function. The callback function must be called at the proper
+        moment by the function that receives it as an argument. <br />
+        When a function must wait for an activity to finish (such an HTTP request or a file system operation) before it
+        can continue running, callbacks are frequently employed in asynchronous programming. When an operation is
+        finished, the callback function is used to manage the results.
+      </p>
+    </div>
+  </body>
+</html>
